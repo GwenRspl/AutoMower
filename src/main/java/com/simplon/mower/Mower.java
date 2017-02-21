@@ -3,7 +3,7 @@ package com.simplon.mower;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Mower {
+public class Mower implements IMower {
 
     private Position position;
     private List<Instruction> instructions = new ArrayList<Instruction>();
@@ -13,7 +13,7 @@ public class Mower {
         this.instructions = instructions;
     }
 
-    private void moveForward(Lawn lawn) {
+    public void moveForward(Lawn lawn) {
         switch (this.position.getOrientation()) {
             case N:
                 if (this.position.getVertical() < lawn.getHeight()) {
@@ -38,7 +38,7 @@ public class Mower {
         }
     }
 
-    private void turnRight() {
+    public void turnRight() {
         switch (this.position.getOrientation()) {
             case N:
                 this.position.setOrientation(Orientation.E);
@@ -55,7 +55,7 @@ public class Mower {
         }
     }
 
-    private void turnLeft() {
+    public void turnLeft() {
         switch (this.position.getOrientation()) {
             case N:
                 this.position.setOrientation(Orientation.W);

@@ -8,9 +8,6 @@ import java.util.List;
 
 public class LifeMower {
 
-    public static void main(String[] args) {
-
-    }
 
     public Lawn createLawn() {
         Lawn myLawn = new Lawn();
@@ -44,6 +41,7 @@ public class LifeMower {
                         break;
                     }
                 }
+
                 Position position = new Position(horizontal, vertical, orientation);
                 line = file.readLine();
                 List<Instruction> instructions = new ArrayList<Instruction>();
