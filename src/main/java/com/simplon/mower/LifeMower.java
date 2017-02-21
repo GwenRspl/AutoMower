@@ -8,7 +8,6 @@ import java.util.List;
 
 public class LifeMower {
 
-
     public Lawn createLawn() {
         Lawn myLawn = new Lawn();
         try {

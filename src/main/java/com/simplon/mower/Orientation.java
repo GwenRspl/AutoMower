@@ -6,7 +6,7 @@ public enum Orientation {
     W("W"),
     S("S");
 
-    String name="";
+    String name = "";
 
     Orientation(String name) {
         this.name = name;

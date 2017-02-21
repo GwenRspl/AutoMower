@@ -5,12 +5,11 @@ public enum Instruction {
     R("R"),
     F("F");
 
-    String name="";
+    String name = "";
 
     Instruction(String name) {
         this.name = name;
     }
-
 
     @Override
     public String toString() {
