@@ -11,6 +11,19 @@ public enum Instruction {
         this.name = name;
     }
 
+    public static Instruction get(char instruction) {
+        switch (instruction) {
+            case 'R':
+                return R;
+            case 'L':
+                return L;
+            case 'F':
+                return F;
+            default:
+                return R;
+        }
+    }
+
     @Override
     public String toString() {
         return name;

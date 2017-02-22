@@ -33,23 +33,14 @@ public class LifeMower {
             while ((line = file.readLine()) != null) {
                 int horizontal = Character.getNumericValue(line.charAt(0));
                 int vertical = Character.getNumericValue(line.charAt(1));
-                Orientation orientation = Orientation.N;
-                for (Orientation enumOrientation : Orientation.values()) {
-                    if (enumOrientation.name.equals(Character.toString(line.charAt(2)))) {
-                        orientation = enumOrientation;
-                        break;
-                    }
-                }
+                Orientation orientation = Orientation.get(line.charAt(2));
 
                 Position position = new Position(horizontal, vertical, orientation);
                 line = file.readLine();
                 List<Instruction> instructions = new ArrayList<Instruction>();
                 for (int i = 0; i < line.length(); i++) {
-                    for (Instruction enumInstruction : Instruction.values()) {
-                        if (enumInstruction.name.equals(Character.toString(line.charAt(i)))) {
-                            instructions.add(enumInstruction);
-                        }
-                    }
+                    Instruction enumInstruction = Instruction.get(line.charAt(i));
+                    instructions.add(enumInstruction);
                 }
                 Mower mower = new Mower(position, instructions);
                 mowers.add(mower);
