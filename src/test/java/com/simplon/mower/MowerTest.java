@@ -11,7 +11,7 @@ import static junit.framework.TestCase.assertEquals;
 public class MowerTest {
 
     @Test
-    public void MoveOrientationNorthForward() {
+    public void moveForwardFacingNorth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.N);
         List<Instruction> instructions = new ArrayList<Instruction>();
@@ -23,7 +23,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationNorthLeft() {
+    public void moveLeftFacingNorth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.N);
         List<Instruction> instructions2 = new ArrayList<Instruction>();
@@ -35,7 +35,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationNorthRight() {
+    public void moveRightFacingNorth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.N);
         List<Instruction> instructions3 = new ArrayList<Instruction>();
@@ -47,7 +47,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationNorthForwardOut() {
+    public void moveForwardOutFacingNorth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 5, Orientation.N);
         List<Instruction> instructions4 = new ArrayList<Instruction>();
@@ -59,7 +59,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationEastForward() {
+    public void MoveForwardFacingEast() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.E);
         List<Instruction> instructions = new ArrayList<Instruction>();
@@ -71,7 +71,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationEastLeft() {
+    public void moveLeftFacingEast() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.E);
         List<Instruction> instructions2 = new ArrayList<Instruction>();
@@ -83,7 +83,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationEastRight() {
+    public void moveRightFacingEast() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.E);
         List<Instruction> instructions3 = new ArrayList<Instruction>();
@@ -95,7 +95,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationEastForwardOut() {
+    public void moveForwardOutFacingEast() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(5, 5, Orientation.E);
         List<Instruction> instructions4 = new ArrayList<Instruction>();
@@ -107,7 +107,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationSouthForward() {
+    public void moveForwardFacingSouth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.S);
         List<Instruction> instructions = new ArrayList<Instruction>();
@@ -119,7 +119,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationSouthLeft() {
+    public void moveLeftFacingSouth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.S);
         List<Instruction> instructions2 = new ArrayList<Instruction>();
@@ -131,7 +131,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationSouthRight() {
+    public void moveRightFacingSouth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.S);
         List<Instruction> instructions3 = new ArrayList<Instruction>();
@@ -143,7 +143,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationSouthForwardOut() {
+    public void moveForwardOutFacingSouth() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(5, 0, Orientation.S);
         List<Instruction> instructions4 = new ArrayList<Instruction>();
@@ -155,7 +155,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationWestForward() {
+    public void moveForwardFacingWest() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.W);
         List<Instruction> instructions = new ArrayList<Instruction>();
@@ -167,7 +167,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationWestLeft() {
+    public void moveLeftFacingWest() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.W);
         List<Instruction> instructions2 = new ArrayList<Instruction>();
@@ -179,7 +179,7 @@ public class MowerTest {
     }
 
     @Test
-    public void moveOrientationWestRight() {
+    public void moveRightFacingWest() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(1, 2, Orientation.W);
         List<Instruction> instructions3 = new ArrayList<Instruction>();
@@ -191,7 +191,7 @@ public class MowerTest {
     }
 
     @Test
-    public void MoveOrientationWestForwardOut() {
+    public void moveForwardOutFacingWest() {
         Lawn myLawn = new Lawn(5, 5);
         Position position = new Position(0, 2, Orientation.W);
         List<Instruction> instructions4 = new ArrayList<Instruction>();

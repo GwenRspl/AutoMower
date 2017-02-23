@@ -3,6 +3,7 @@ package com.simplon.mower;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,8 +47,9 @@ public class LifeMower {
                 mowers.add(mower);
             }
             file.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
+            return mowers;
         }
         return mowers;
     }
